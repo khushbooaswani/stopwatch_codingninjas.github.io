@@ -1,0 +1,195 @@
+/* Code is written by Khushboo Aswani */
+/* Body Section */
+body::-webkit-scrollbar {
+  overflow: hidden;
+  display: none;
+}
+
+body {
+    margin: 0px;
+}
+
+/* Main Container Section */
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: radial-gradient(purple, pink);
+}
+
+/* Heading part inside Main Container Section */
+#heading_block{
+    display: flex;
+    flex-direction: column;
+}
+
+#icon_box{
+    width: 15px;
+    height: 18px;   
+    margin-top: 5px;
+    display: flex;
+    margin-left: -20px;
+    
+}
+
+#icon{
+    width: 100%;
+    height: 100%;
+}
+
+#icon:hover{
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 6px whitesmoke;
+}
+
+#heading_box {
+border: 2px solid white;
+margin-top: 5px;
+box-shadow: 0px 0px 10px 6px whitesmoke;
+display: flex;
+    
+}
+
+#heading_text {
+    font-size: 400%;
+    letter-spacing: 40px;
+    font-weight: bold;
+    margin-top: 18px;
+    font-family:Comic Sans MS;
+}
+
+#heading_box:hover {
+    background-image: linear-gradient(white, rgb(164, 182, 229));
+    color: black;
+}
+
+/* Clock part inside Main Container Section */
+#clock_container {
+    height: 60vh;
+    width: 25vw;
+    min-height: 260px;
+    min-width: 460px;
+    border: 10px solid rgb(164, 182, 229);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 6px whitesmoke;
+}
+
+.animate__animated.animate__pulse {
+    --animate-duration: 2s;
+  }
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+#clock_container:hover {
+    background-image: linear-gradient(white, rgb(164, 182, 229));
+    color: black;
+}
+
+/* timer part inside the Clock Part */
+#timer_container {
+    height: 22%;
+    width: 60%;
+    background-color: rgb(240, 145, 145);
+    box-shadow: 0px 0px 10px 6px whitesmoke;
+    border: 3px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer_text{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* buttons part inside the Clock Part */
+#buttons {
+    height: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+}
+
+#start_button {
+    border: 1px solid darkolivegreengreen;
+    width: 85px;
+    border-radius: 50%;
+    color: darkolivegreen;
+}
+
+#start_button:hover {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+#stop_button {
+    border: 1px solid darkred;
+    width: 85px;
+    border-radius: 50%;
+    color: darkred;
+}
+
+#stop_button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+#reset_button {
+    border: 1px solid darkmagenta;
+    width: 85px;
+    border-radius: 50%;
+    color: darkmagenta;
+}
+
+#reset_button:hover {
+    background-color: darkmagenta;
+    color: white;
+}
+
+.button_text {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 500px){
+    #heading_box {
+    height: 100%;
+    width: 104%;
+    min-width: 0px;  
+    }
+    #heading_text {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    #clock_container {
+    height: 46%;
+    width: 79%;
+    min-width: 0px;
+    }  
+    
+    #timer_container {
+        height: 9%;
+        width: 57%;
+    }
+    #timer_text {
+        font-size: 0.8rem;
+    }
+
+    .button_text {
+        font-size: 0.6rem;
+        width: 35px;
+    }
+}
